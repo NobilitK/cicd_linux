@@ -33,7 +33,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Build Docker image
-        run: docker build -t dweblab/songdo .
+        run: docker build -t nobilit/linux .
 
       - name: Push docker image
-        run: docker push nobilit/songdo:latest
+        run: docker push nobilit/linux:latest
